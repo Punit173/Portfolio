@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div>
+                    <p>UI/UX Designer</p>
+                    <h1>Hi, I'm <span> Punit</span> <br> Joshi from India</h1>
+                </div>
+                <div>
+                    <img height="300vh" src="../download (1).png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img
+                        src="https://img.freepik.com/premium-vector/cute-robot-waving-hand-cartoon-illustration_138676-2744.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate and dedicated coder with a strong foundation in programming languages such as Python,
+                        Java, and JavaScript. Proven ability to tackle complex problems and deliver efficient solutions.
+                        Enthusiastic about continuous learning and eager to embark on a journey of constant growth and
+                        innovation in the ever-evolving field of coding.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designer Web/App Interfaces</li>
+                            <li><span>Problem Solving</span><br>Analytical thinking, creativity, systematic approach.
+                            </li>
+                            <li><span>Programming Languages</span><br>C/C++,Java,JavaScript and Python</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript for front-end; <br> familiarity
+                                with frameworks like React and Angular.</li>
+                            <li><span>Database Management</span><br>Experience with SQL databases, including MySQL and
+                                PostgreSQL.</li>
+                            <li><span>Linux/MacOS</span><br>Familiarity with the Linux/Mac OS and command-line
+                                interface.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul></ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BTech. in Computer Science Engineering (Data Science)</span><br>SRM Institute of
+                                Science and Technology</li>
+                            <li><span>Intermediate passed with 80%</span><br>Advanced Academy</li>
+                            <li><span>Matriculation passed with 8.8 CGPA</span><br>Advanced Academy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Proficient in HTML, CSS, and JavaScript, with hands-on experience in building responsive and
+                        dynamic websites.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Team Collaboration</h2>
+                    <p>Demonstrated ability to work effectively in a team, contributing ideas and actively participating
+                        in group projects.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Project Management</h2>
+                    <p>Organized and detail-oriented, able to manage tasks efficiently and meet deadlines.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Learning Attitude</h2>
+                    <p>Enthusiastic about acquiring new skills, staying updated on industry trends, and adapting to
+                        evolving technologies.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="1.jpg">
+                    <div class="layer">
+                        <h3>Bus Reservation Portal</h3>
+                        <p>Efficient online bus reservation portal offers convenient booking, real-time availability,
+                            and secure transactions for seamless travel experiences.</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="music.jpeg">
+                    <div class="layer">
+                        <h3>Music Website</h3>
+                        <p>Discover a diverse melody of genres on our music website. Explore, listen, and immerse
+                            yourself in the rhythm of sounds.</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="ecom.jpg">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Seamless online shopping experience, vast product selection, secure transactions, and
+                            convenient delivery. Explore, shop, and enjoy effortless transactions.</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img
+                        src="https://images.macrumors.com/t/6xpymF2b1B3o4NBOeS2jFdqtb7k=/1600x900/smart/article-new/2021/03/Facebook-Feature.jpg">
+                    <div class="layer">
+                        <h3>Facebook Login</h3>
+                        <p>The Facebook login page features a simple, user-friendly design with a blue and white color
+                            scheme. It includes fields for entering your email or phone number and password, along with
+                            buttons for logging in.
+                        </p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img
+                        src="https://cdn.prod.website-files.com/619cef5c40cb8925cd33ece3/621e3d842f5305af9170e4eb_619cef5c40cb8963c133f5fc_6076f40a7bc433d96f4663f4_template-vignette-TO-DO-LIST-1200x900.png">
+                    <div class="layer">
+                        <h3>ToDo List</h3>
+                        <p>A simple, user-friendly to-do list page featuring task creation, editing, and deletion. Tasks
+                            are categorized, with checkboxes for completion tracking. Prioritization options and due
+                            date settings enhance organization.
+                        </p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>jpunit2005@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9109755242</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/punittt_pj/?next=%2F"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/punit-joshi-6402a3271/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Punit173"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Punit. Rights are reserved and protected.</p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var menu = document.getElementById("sidemenu");
+        function openmenu() {
+            menu.style.right = "0";
+        }
+        function closemenu() {
+            menu.style.right = "-200px";
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/a972b744c3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
